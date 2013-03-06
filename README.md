@@ -26,7 +26,7 @@ The minimal you'll need to have is:
       "/users/{user-id}"
     );
 
-To make [API][API] calls:
+To make API calls:
 
     // Set the Instagram access token to be used by the app
     $this->instagram->setAccessToken({access-token});
