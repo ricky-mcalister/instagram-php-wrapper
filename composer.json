@@ -1,0 +1,27 @@
+{
+    "name": "instagram/instagram-php-wrapper",
+    "homepage": "https://github.com/ricky-mcalister/instagram-php-wrapper",
+    "description":"Unofficial Instagram PHP Wrapper (v.0.1)",
+    "keywords":["instagram","php","sdk","wrapper","api","v1"],
+    "type":"library",
+    "license":"Apache-2.0",
+    "authors":[
+        {
+            "name":"Ricky McAlister",
+            "homepage":"https://github.com/ricky-mcalister/instagram-php-wrapper"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "classmap": [""]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1"
+        }
+    }
+}
