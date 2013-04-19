@@ -311,9 +311,17 @@ class Instagram {
 		$result = curl_exec($ch);
 
 		if (curl_errno($ch) == 60) { // CURLE_SSL_CACERT
-			self::errorLog('Invalid or no certificate authority found, using bundled information');
-			curl_setopt($ch, CURLOPT_CAINFO, dirname(__FILE__) . '/fb_ca_chain_bundle.crt');
-			$result = curl_exec($ch);
+			$e = new InstagramApiException(
+				array(
+					'error_code' => curl_errno($ch),
+					'error' => array(
+						'message' => curl_error($ch),
+						'type' => 'CurlException',
+					),
+				)
+			);
+			curl_close($ch);
+			throw $e;
 		}
 
 		if ($result === false) {
