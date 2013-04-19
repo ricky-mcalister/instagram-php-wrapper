@@ -1,5 +1,5 @@
 {
-    "name": "instagram/instagram-php-wrapper",
+    "name": "instagram/php-wrapper",
     "homepage": "https://github.com/ricky-mcalister/instagram-php-wrapper",
     "description":"Unofficial Instagram PHP Wrapper (v.0.1)",
     "keywords":["instagram","php","sdk","wrapper","api","v1"],
@@ -17,7 +17,7 @@
         "ext-json": "*"
     },
     "autoload": {
-        "classmap": [""]
+        "classmap": ["src"]
     },
     "extra": {
         "branch-alias": {
