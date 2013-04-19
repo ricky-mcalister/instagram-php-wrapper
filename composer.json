@@ -18,10 +18,5 @@
     },
     "autoload": {
         "classmap": [""]
-    },
-    "extra": {
-        "branch-alias": {
-            "master": "0.1"
-        }
     }
 }
